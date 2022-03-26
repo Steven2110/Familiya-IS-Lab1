@@ -1,0 +1,33 @@
+{
+    "min_price": 3000000,
+    "max_price": 5000000,
+    "body_type": [
+        "SUV",
+        "Sedan"
+    ],
+    "fuel_type": [
+        "Petrol"
+    ],
+    "transmission_type": [
+        "Automatic",
+        "Manual"
+    ],
+    "color": [
+        "Black",
+        "Red"
+    ],
+    "brand": [
+        "BMW",
+        "Honda",
+        "Kia",
+        "Mazda",
+        "Mercedes-Benz"
+    ],
+    "minimum_year": 2015,
+    "vehicle_size": [
+        "Midsize"
+    ],
+    "profile": [
+        "Economic"
+    ]
+}

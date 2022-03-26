@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+        <a href="/"><h1><div class="head1">
+            ~CARSELECTION~
+        </div></h1></a>
+        
+        <title>
+            CARSELECTION WEBSITE
+        </title>
+    </head>    
+    <body>
+        <header>
+        <div class="center">
+                <p style="text-align: center;">Результаты Вашего поиска:</p>
+                    <div class="row1" >
+                        <div class="column1">
+                            <p>
+                                <b style="font-size: xx-large;">Лучшие совпадения:</b>
+                            </p>
+                            <ol type="1" style="font-size: 24px;">
+                                {% for message in data1%}
+                                    <li style="color: white;">
+                                        <ol type="a">
+                                            <li ><b>Марка</b>: {{message.make}}</li>
+                                            <li><b>Модель</b>: {{message.model}}</li>
+                                            <li> <b>Год выпуска</b>: {{message.year}}</li>
+                                            <li><b>Цвет</b>: {{message.color}}</li>
+                                            <li><b>Тип топлива</b>: {{message.engine_fuel_type}}</li>
+                                            <li><b>Мощность двигателя</b>: {{message.engine_hp}}</li>
+                                            <li> <b>Цилиндры двигателя</b>: {{message.engine_cylinders}}</li>
+                                            <li> <b>Ведущие колеса</b>: {{message.driven_wheels}}</li>
+                                            <li> <b>Количество двери</b>: {{message.number_of_doors}}</li>
+                                            <li> <b>Риночная категория</b>: {{message.market_category}}</li>
+                                            <li><b>Размер</b>: {{message.vehicle_size}}</li>
+                                            <li><b>Тип кузова</b>: {{message.vehicle_style}}</li>
+                                            <li> <b>Расход топлива</b>: {{message.city_kpl}} Километр/Литр</li>
+                                            <li> <b>Цена</b>: <b style="font-size: xx-large;">{{message.price}} ₽</b></li>
+                                        </ol>
+        
+                                    </li>
+                                    <br>
+                                {% endfor %}
+                            </ol>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="column1">
+                            <p>
+                                <b style="font-size: xx-large;">Похожие варианты:</b>
+                            </p>
+                            <ol type="1" style="font-size: 24px;">
+                                {% for message in data2%}
+                                    <li style="color: white;">
+                                        <ol type="a">
+                                            <li ><b>Марка</b>: {{message.make}}</li>
+                                            <li><b>Модель</b>: {{message.model}}</li>
+                                            <li> <b>Год выпуска</b>: {{message.year}}</li>
+                                            <li><b>Цвет</b>: {{message.color}}</li>
+                                            <li><b>Тип топлива</b>: {{message.engine_fuel_type}}</li>
+                                            <li><b>Мощность двигателя</b>: {{message.engine_hp}}</li>
+                                            <li> <b>Цилиндры двигателя</b>: {{message.engine_cylinders}}</li>
+                                            <li> <b>Ведущие колеса</b>: {{message.driven_wheels}}</li>
+                                            <li> <b>Количество двери</b>: {{message.number_of_doors}}</li>
+                                            <li> <b>Риночная категория</b>: {{message.market_category}}</li>
+                                            <li><b>Размер</b>: {{message.vehicle_size}}</li>
+                                            <li><b>Тип кузова</b>: {{message.vehicle_style}}</li>
+                                            <li> <b>Расход топлива</b>: {{message.city_kpl}} Километр/Литр</li>
+                                            <li> <b>Цена</b>: <b style="font-size: xx-large;">{{message.price}} ₽</b></li>
+                                        </ol>
+                                    </li>
+                                    <br>
+                                {% endfor %}
+                            </ol>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    
+                </div>
+    </header>
+    </body>
+
+    <footer>
+        Author: Андрюшина Мария, Виджая Стивен, Танумихарджа Рафаэл Мэтью, Цурова Тамара
+        <br>
+        Tomsk 2022
+    </footer>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+        <a href="/"><h1><div class="head1">
+            ~CARSELECTION~
+        </div></h1></a>
+        <title>
+            CARSELECTION WEBSITE
+        </title>
+</head>
+<body>
+    <p style="font-size:120%" id="top-text">
+        Какой тип кузова Вам нужен?
+     </p>
+     <p>
+         <b>Выберите тип автомобиля:</b>
+     </p>
+    
+     <form action="fuel" method="post">
+        <input type="checkbox" id="any" name="input_body" value="Any">
+        <label>Любой</label><br>
+        <input type="checkbox" id="type1" name="input_body" value="Hatchback">
+        <label>Хэтчбек</label><br>
+        <input type="checkbox" id="type2" name="input_body" value="SUV">
+        <label>Внедорожник</label><br>
+        <input type="checkbox" id="type3" name="input_body" value="Convertible">
+        <label>Кабриолет</label><br>
+        <input type="checkbox" id="type4" name="input_body" value="Convertible SUV">
+        <label>Кабриолет-внедорожник</label><br>
+        <input type="checkbox" id="type5" name="input_body" value="Coupe">
+        <label>Купе</label><br>
+        <input type="checkbox" id="type6" name="input_body" value="Sedan">
+        <label>Седан</label><br>
+        <input type="checkbox" id="type7" name="input_body" value="Wagon">
+        <label>Универсал</label><br><br>
+        <input type="submit" value="Следующий шаг">
+     </form>
+
+
+</body>
+
+<footer>
+    Author: Андрюшина Мария, Виджая Стивен, Танумихарджа Рафаэл Мэтью, Цурова Тамара
+    <br>
+    Tomsk 2022
+</footer>
+</html>

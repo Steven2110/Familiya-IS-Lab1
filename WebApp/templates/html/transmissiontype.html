@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <a href="/"><h1><div class="head1">
+        ~CARSELECTION~
+    </div></h1></a>
+        
+        <title>
+            CARSELECTION WEBSITE
+        </title>
+</head>
+<body>
+    <p style="font-size:120%" id="top-text">
+        Какой тип КПП Вам нужен?
+     </p>
+     <p>
+         <b>Выберите тип коробки передач Вашего автомобиля:</b>
+     </p>
+    
+     <form action="brand" method="post">
+         <input type="checkbox" name="input_transmission" value="Any">
+         <label>Любой</label><br>
+         <input type="checkbox" name="input_transmission" value="Automatic">
+         <label>Автоматический</label><br>
+         <input type="checkbox" name="input_transmission" value="Manual">
+         <label>Механический</label><br>
+         <input type="checkbox" name="input_transmission" value="Automated manual">
+         <label>Автоматизированное ручное управление</label><br><br>
+         <input type="submit" value="Следующий шаг">
+       </form>
+</body>
+
+<footer>
+    Author: Андрюшина Мария, Виджая Стивен, Танумихарджа Рафаэл Мэтью, Цурова Тамара
+    <br>
+    Tomsk 2022
+</footer>
+</html>
